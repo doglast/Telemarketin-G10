@@ -68,24 +68,18 @@ const saveClient = () => {
 }
 
 const createRow = (client, index) => {
-  const newRow = document.createElement('tr');
+  const newRow = document.createElement('tr')
   newRow.innerHTML = `
         <td>${client.nome}</td>
         <td>${client.email}</td>
         <td>${client.celular}</td>
         <td>${client.cidade}</td>
         <td>
-            <button type="button" alt-text="Editar" class="button green" id="edit-${index}">
-              <!-- Adicionando um ícone de lápis -->
-              <i class="far fa-pencil-alt"></i>
-            </button>
-            <button type="button" alt-text="Excluir" class="button red" id="delete-${index}">
-              <!-- Adicionando um ícone de lixeira -->
-              <i class="far fa-trash-alt"></i>
-            </button>
+        <button type="button" alt="Editar" class="button green" id="edit-${index}">Editar</button>
+        <button type="button" alt="Excluir" class="button red" id="delete-${index}">Excluir</button>
         </td>
-    `;
-  document.querySelector('#tableClient>tbody').appendChild(newRow);
+    `
+  document.querySelector('#tableClient>tbody').appendChild(newRow)
 }
 
 const clearTable = () => {
