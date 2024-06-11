@@ -6,7 +6,7 @@
 
 .records th {
   height: 50px;
-  background-color: var(--primary-color);
+  background-color: #FFBA00;
   padding-left: 20px;
   font-size: 1.2rem;
 }
@@ -24,7 +24,7 @@
 }
 
 .records tr:hover {
-  background-color: var(--secundary-color);
+  background-color: #FFF1CC;
 }
 
 @media(max-width:480px) {
@@ -37,7 +37,7 @@
   }
 
   .records tr {
-    box-shadow: 0 1px 3px var(--shadow-color);
+    box-shadow: 0 1px 3px #CCC;
   }
 
   .records td:not(:first-child) {
