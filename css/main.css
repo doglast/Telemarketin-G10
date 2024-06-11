@@ -5,8 +5,9 @@
 }
 
 :root {
-  --primary-color: #FFBA00;
-  --secundary-color: #FFF1CC;
+  --header-color: #AA6BFA;
+  --primary-color: #8151F5;
+  --secundary-color: #B7A6F5;
   --shadow-color: #CCC;
   --text-color: #FFF;
 }
@@ -20,16 +21,28 @@ body {
 }
 
 header {
-  background-color: var(--primary-color);
-  height: 70px;
+  background-color: var(--header-color);
+  height: 100px;
   text-align: center;
   line-height: 70px;
   box-shadow: 0 1px 2px var(--shadow-color);
+  position: relative;
+  z-index: 11;
 }
 
 .header-title {
-  color: black;
+  color: white;
   font-size: 2rem;
+  position: absolute;
+  left: 40%;
+}
+
+.header-subtitle {
+  color: white;
+  font-size: 1rem;
+  position: absolute;
+  left: 44%;
+  top: 40px;
 }
 
 main {
@@ -42,6 +55,13 @@ main {
   padding: 50px;
   box-shadow: 2px 2px 10px var(--shadow-color);
   gap: 20px;
+}
+
+.logo-image {
+  height: 5.9rem;
+  position: absolute;
+  left: 0;
+  z-index: 10;
 }
 
 footer {

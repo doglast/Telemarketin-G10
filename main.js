@@ -7,7 +7,7 @@ const closeModal = () => {
   clearFields()
   document.getElementById('modal').classList.remove('active')
 }
-
+//#region Cliente
 
 const getLocalStorage = () => JSON.parse(localStorage.getItem('db_client')) ?? []
 const setLocalStorage = (dbClient) => localStorage.setItem("db_client", JSON.stringify(dbClient))
@@ -144,3 +144,4 @@ document.querySelector('#tableClient>tbody')
 
 document.getElementById('cancelar')
   .addEventListener('click', closeModal)
+//#endregion
